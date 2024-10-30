@@ -48,7 +48,7 @@ export class UserService {
       return {
         message: 'Login successful',
         token,
-        user: { username: userDetail.username, email: userDetail.email },
+        user: { username: userDetail.username, email: userDetail.email,userId:userDetail._id },
       };
     } catch (error) {
       console.error(error);
